@@ -1,7 +1,7 @@
 const form = document.querySelector('.login-form');
 
 form.addEventListener('submit', event => {
-  event.preventDefault(); // ❗ Не дає сторінці перезавантажитися
+  event.preventDefault();
 
   const { email, password } = form.elements;
 
@@ -19,5 +19,5 @@ form.addEventListener('submit', event => {
   };
 
   console.log(formData);
-  form.reset(); // ❗ Очистити всі поля форми
+  form.reset();
 });

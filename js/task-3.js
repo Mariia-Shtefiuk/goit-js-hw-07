@@ -1,7 +1,7 @@
-const inputEl = document.querySelector('#name-input');
-const outputEl = document.querySelector('#name-output');
+const inputElement = document.querySelector('#name-input');
+const outputElement = document.querySelector('#name-output');
 
-inputEl.addEventListener('input', () => {
-  const trimmedValue = inputEl.value.trim();
-  outputEl.textContent = trimmedValue === '' ? 'Anonymous' : trimmedValue;
+inputElement.addEventListener('input', () => {
+  const trimmedValue = inputElement.value.trim();
+  outputElement.textContent = trimmedValue === '' ? 'Anonymous' : trimmedValue;
 });
